@@ -3,6 +3,7 @@ body{
     background-image: url(images/header-bg.png);
     background-size: contain;
     background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
 }
 
 .material-symbols-outlined {
@@ -14,7 +15,6 @@ body{
 }
 
 header{
-    /* background-image: url(images/header-bg.png); */
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -65,7 +65,6 @@ header .header-text h1{
     justify-content: space-between;
     width: 90vw;
     margin: auto;
-    /* padding: auto 10vw; */
 }
 
 .feature .feature-parag{
@@ -82,6 +81,89 @@ header .header-text h1{
     display: flex;
     justify-content: space-between;
 }
+
+/* small screens under 480px width */
+@media (min-width: 374px) and (max-width: 480px){
+    body{
+        background-image: contain;
+    }
+    header{
+       height: 30vh;
+       background: rgba(50, 125, 237, 0.001);
+       backdrop-filter: blur(10px);
+       display: flex;
+       flex-direction: column;
+       margin-bottom: 0;
+    }
+    header nav{
+       align-items: center;
+    }
+    header nav .contact-about{
+        display: none;
+    }  
+    header nav .menu{
+        width: 112px;
+        justify-content: center;
+        font-size: 1.2rem;
+    }  
+
+    header .header-text{
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        border-radius: 10px;
+        width: 90%;
+        margin: 0 auto;
+    } 
+
+    header .header-text p{
+        text-align: center;
+        text-shadow: 5px 5px 10px, blue;
+        color: #000068;
+    }  
+
+    .feature{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 3vw;
+        width: 90%;
+    } 
+    .feature .feature-parag{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .feature .paragraph-title{
+        /* display: flex; */
+        width: 100%;
+        /* margin: auto; */
+        /* justify-content: center; */
+        /* text-align: center; */
+        
+    }
+    .feature .paragraph-title h2{
+        /* width: 100%; */
+        text-align: center;
+        font-size: 2.3rem;
+        
+    }
+    .feature .feature-parag .paragraph{
+        width: 100%;
+        font-size: 1.2rem;
+        
+    }
+    
+    .feature .feature-parag .statistiques{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+        
+    
+  }
+  
 
 
 
